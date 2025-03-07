@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+</head>
+<body>
+    <h1>Dairy Products!</h1>
+    <p>Click on the buttons inside the menu:</p>
+
+    <!-- vertical tabs tutorial -->
+    <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'Milk')"id="defaultOpen">Milk</button>
+        <button class="tablinks" onclick="openTab(event, 'Cheese')">Cheese</button>
+        <button class="tablinks" onclick="openTab(event, 'Cream')">Cream</button>
+    </div>
+
+    <div id="Milk" class="tabcontent">
+        <h3>Milk</h3>
+        <p>Milk is a white liquid food produced by the mammary glands of mammals. It is the primary source of nutrition for young mammals (including breastfed human<span id="dotsMilk">...</span>
+            <span id="moreMilk"> infants) before they are able to digest solid food. Milk contains many nutrients, including calcium and protein, as well as lactose and saturated fat. Immune factors and immune-modulating components in milk contribute to milk immunity.<br><br>
+                <img src="milk.jpg" alt="milk">
+            </span></p>
+        <button onclick="milkFunction()" id="milkButton">Read more</button>
+    </div>
+    <div id="Cheese" class="tabcontent">
+        <h3>Cheese</h3>
+        <p>Cheese is a type of dairy product produced in a range of flavors, textures, and forms by coagulation of the milk protein casein. It comprises proteins and<span id="dotsCheese">...</span>
+            <span id="moreCheese">fat from milk (usually the milk of cows, buffalo, goats or sheep). During production, milk is usually acidified and either the enzymes of rennet or bacterial enzymes with similar activity are added to cause the casein to coagulate. The solid curds are then separated from the liquid whey and pressed into finished cheese.<br><br>
+                <img src="cheese.webp" alt="cheese">
+            </span></p>
+            <button onclick="cheeseFunction()" id="cheeseButton">Read more</button>
+    </div>
+    <div id="Cream" class="tabcontent">
+        <h3>Cream</h3>
+        <p>Cream is a dairy product composed of the higher-fat layer skimmed from the top of milk before homogenization. In un-homogenized milk, the fat, which is less<span id="dotsCream">...</span>
+            <span id="moreCream"> dense, eventually rises to the top. In the industrial production of cream, this process is accelerated by using centrifuges called "separators". In many countries, it is sold in several grades depending on the total butterfat content. It can be dried to a powder for shipment to distant markets, and contains high levels of saturated fat.<br><br>
+                <img src="cream.jpg" alt="cream">
+            </span></p>
+        <button onclick="creamFunction()" id="creamButton">Read more</button>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
+<!-- I weaved the two tutorials together to put a "read more" button inside of the vertical tabs, and added images to it. -->
+<!-- span id command is from the read more tutorial -->
